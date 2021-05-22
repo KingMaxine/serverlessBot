@@ -10,7 +10,7 @@ const stage = new Stage();
 const Scene = BaseScene
 bot.use(session())
 bot.use(stage.middleware())
-const url = 'https://serverless-bot-j6qmal58e-adebello04.vercel.app'
+const url = 'https://serverless-bot.vercel.app/'
 
 bot.start(async(ctx)=> {
 ctx.reply('hello')
