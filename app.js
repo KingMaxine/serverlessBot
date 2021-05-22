@@ -10,29 +10,24 @@ const stage = new Stage();
 const Scene = BaseScene
 bot.use(session())
 bot.use(stage.middleware())
-const url = 'https://serverless-bot-pbhryttsd-adebello04.vercel.app/'
+const url = 'https://serverless-bot-j6qmal58e-adebello04.vercel.app'
 
 bot.start(async(ctx)=> {
 ctx.reply('hello')
 })
 
-bot.launch()
 
-//bot.telegram.setWebhook(url+'/secretpath')
+bot.telegram.setWebhook(url+'/secretpath')
 
 
 app.use(bodyParser.json());
-app.use(
-  bodyParser.urlencoded({
-    extended: true,
-  })
-);
 
+app.use(bot.webhookCallback('/secret-path'))
 app.get('/', (req, res) => {
   res.json({'message': 'ok'});
 })
 
-//app.use(bot.webhookCallback('/secret-path'))
+
 
 /* Error handler middleware */
 app.use((err, req, res, next) => {
