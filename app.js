@@ -16,7 +16,9 @@ bot.start(async(ctx)=> {
 ctx.reply('hello')
 })
 
-bot.telegram.setWebhook(url+'/secretpath')
+bot.launch()
+
+//bot.telegram.setWebhook(url+'/secretpath')
 
 
 app.use(bodyParser.json());
@@ -30,7 +32,7 @@ app.get('/', (req, res) => {
   res.json({'message': 'ok'});
 })
 
-app.use(bot.webhookCallback('/secret-path'))
+//app.use(bot.webhookCallback('/secret-path'))
 
 /* Error handler middleware */
 app.use((err, req, res, next) => {
