@@ -12,6 +12,10 @@ bot.use(session())
 bot.use(stage.middleware())
 const url = 'https://serverless-bot.vercel.app/'
 
+bot.telegram.deleteWebhook().then(success => {
+  success && console.log('🤖 is listening to your commands')
+})
+
 bot.start(async(ctx)=> {
 ctx.reply('hello')
 })
