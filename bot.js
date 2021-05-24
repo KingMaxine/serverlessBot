@@ -27,10 +27,13 @@ app.use(bodyParser.json());
 
 //app.use(bot.webhookCallback('/secret-path'))
 
-app.get('/', (req, res) => {
-  res.json({'message': 'ok'});
-})
 
+
+app.get('/', (req, res) => res.send('Home Page Route'));
+
+app.get('/about', (req, res) => res.send('About Page Route'));
+
+app.get('/portfolio', (req, res) => res.send('Portfolio Page Route'));
 
 
 /* Error handler middleware */
@@ -42,7 +45,7 @@ app.use((err, req, res, next) => {
   return;
 });
 
-app.listen(port, '0.0.0.0', () => {
+app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 });
 
