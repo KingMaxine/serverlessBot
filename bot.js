@@ -12,15 +12,13 @@ bot.use(session())
 bot.use(stage.middleware())
 const url = 'https://serverless-bot.vercel.app/'
 
+
+
 bot.telegram.deleteWebhook().then(success => {
   success && console.log('🤖 is listening to your commands')
 })
 
-bot.start(async(ctx)=> {
-ctx.reply('hello')
-})
 
-bot.launch()
 
 //bot.telegram.setWebhook(url+'/secretpath')
 
@@ -52,6 +50,13 @@ app.listen(port, '0.0.0.0', () => {
 
 
 
+
+
+bot.start(async(ctx)=> {
+ctx.reply('hello')
+})
+
+bot.launch()
 
 // Set the bot API endpoint
 
