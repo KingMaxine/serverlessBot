@@ -7,18 +7,20 @@ const bot = new Telegraf('1806769124:AAEA3ocdTDN0to7wXWFulm4N3bVuwZBrpeY')
 
 app.use(bodyParser.json())
 
-bot.telegram.deleteWebhook().then(success => {
+/*t.telegram.deleteWebhook().then(success => {
   success && console.log('🤖 is listening to your commands')
 })
-
+*/
 bot.start(async(ctx)=> {
 ctx.reply('hello')
 })
 
+bot.launch()
+/*
 bot.telegram.setWebhook('https://serverless-bot.vercel.app/secretPath')
 
 app.use(bot.webhookCallback('/secretPath'))
-
+*/
 
 app.get('/', (req, res) => res.send('Home Page Route'));
 
