@@ -4,7 +4,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 const { Telegraf, session, Extra, Markup, Scenes} = require('telegraf');
 const { BaseScene, Stage } = Scenes
-const bot = new Telegraf('1724870296:AAFVeLCTVWNUou6MCQkB2KZQ_qIG7IDzZKE')
+const bot = new Telegraf('1806769124:AAEA3ocdTDN0to7wXWFulm4N3bVuwZBrpeY')
 const {enter, leave} = Stage
 const stage = new Stage();
 const Scene = BaseScene
@@ -20,13 +20,15 @@ bot.start(async(ctx)=> {
 ctx.reply('hello')
 })
 
+bot.launch()
 
-bot.telegram.setWebhook(url+'/secretpath')
+//bot.telegram.setWebhook(url+'/secretpath')
 
 
 app.use(bodyParser.json());
 
-app.use(bot.webhookCallback('/secret-path'))
+//app.use(bot.webhookCallback('/secret-path'))
+
 app.get('/', (req, res) => {
   res.json({'message': 'ok'});
 })
