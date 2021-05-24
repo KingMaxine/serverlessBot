@@ -22,7 +22,7 @@ bot.telegram.setWebhook('https://serverless-bot.vercel.app/secretPath')
 app.use(bot.webhookCallback('/secretPath'))
 */
 
-app.get('/', (req, res) => res.send('Home Page Route'));
+app.get('/', (req, res) => res.send('New Home Page Route'));
 
 app.get('/about', (req, res) => res.send('About Page Route'));
 
