@@ -2,9 +2,9 @@
   "version": 2,
   "name": "demo-telegram-bot",
   "builds": [
-    { "src": "app.js", "use": "@vercel/node" }
+    { "src": "bot.js", "use": "@vercel/node" }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/app.js" }
+    { "src": "/(.*)", "dest": "/bot.js" }
   ]
 }
