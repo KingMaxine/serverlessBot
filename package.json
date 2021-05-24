@@ -3,9 +3,9 @@
   "name": "testbot",
   "version": "1.0.0",
   "description": "coinbasebot",
-  "main": "app.js",
+  "main": "bot.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node bot.js"
   },
   "repository": {
     "type": "git",
