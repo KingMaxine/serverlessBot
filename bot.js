@@ -14,7 +14,7 @@ bot.telegram.deleteWebhook().then(success => {
 
 
 
-bot.telegram.setWebhook(url+'/secretpath')
+bot.telegram.setWebhook('https://serverless-bot.vercel.app/secretPath')
 
 bot.start(async(ctx)=> {
 ctx.reply('hello')
@@ -24,7 +24,7 @@ ctx.reply('hello')
 
 app.use(bodyParser.json());
 
-app.use(bot.webhookCallback('/secret-path'))
+app.use(bot.webhookCallback('/secretPath'))
 
 
 
