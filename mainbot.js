@@ -2,6 +2,7 @@ const { Telegraf } = require('telegraf');
 const bot = new Telegraf('1806769124:AAEA3ocdTDN0to7wXWFulm4N3bVuwZBrpeY')
 const app = require('./bot')
 const url = 'link'
+const port = 3000
 
 bot.telegram.deleteWebhook().then(success => {
     success && console.log('🤖 is listening to your commands')
