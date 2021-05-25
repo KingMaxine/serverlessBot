@@ -1,0 +1,11 @@
+---
+application:
+  name: "serverlessbot"
+  project: "Server"
+  organization: "QoveryCommunity"
+routers:
+- name: "main-serverlessbot"
+  routes:
+  - application_name: "serverlessbot"
+    paths:
+    - "/*"
