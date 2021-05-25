@@ -5,13 +5,13 @@ const url = 'link'
 
 bot.telegram.deleteWebhook().then(success => {
     success && console.log('🤖 is listening to your commands')
-bot.telegram.setWebhook(url+'/secretPath')
-    // bot.startPolling()
+//bot.telegram.setWebhook(url+'/secretPath')
+     bot.startPolling()
   })
 
 
 
-app.use(bot.webhookCallback('/secretPath'))
+//app.use(bot.webhookCallback('/secretPath'))
 
 bot.start(async(ctx)=> {
     ctx.reply('hello')
