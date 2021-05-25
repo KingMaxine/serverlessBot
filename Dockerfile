@@ -4,4 +4,4 @@ WORKDIR /user/src/app
 COPY package*.json ./
 COPY . .
 RUN npm install
-CMD ["node", "bot.js"]
+CMD ["node", "mainbot.js"]
