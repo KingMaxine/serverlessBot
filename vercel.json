@@ -1,10 +1,12 @@
 {
   "version": 2,
   "name": "demo-telegram-bot",
-  "builds": [
-    { "src": "bot.js", "use": "@vercel/node" }
-  ],
-  "routes": [
-    { "src": "/(.*)", "dest": "/bot.js" }
-  ]
+  "functions": {
+    "bot.js": {
+      "runtime": "@vercel/node"
+     },
+    "mainBot.js":{
+     "runtime": "@vercel/node"
+    }
+  }
 }
