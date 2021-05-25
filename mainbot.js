@@ -17,3 +17,6 @@ bot.start(async(ctx)=> {
     ctx.reply('hello')
     })
 
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`)
+});
