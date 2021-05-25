@@ -15,7 +15,7 @@ bot.telegram.deleteWebhook().then(success => {
 //app.use(bot.webhookCallback('/secretPath'))
 
 bot.start(async(ctx)=> {
-    ctx.reply('hello')
+    ctx.reply('hello '+ctx.from.first_name)
     })
 
 app.listen(port, () => {
