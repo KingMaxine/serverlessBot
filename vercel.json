@@ -6,4 +6,4 @@
     {"src": "mainBot.js", "use": "@vercel/node"
     }
   }
-}
+
