@@ -1,7 +1,8 @@
 {
   "version": 2,
   "name": "demo-telegram-bot",
-  "builds": {"src": "bot.js", "use": "@vercel/node"},
-    {"src": "mainBot.js", "use": "@vercel/node"}
+  "builds": [
+{"src": "*.js", "use": "@vercel/node"}
+]
   }
 
