@@ -16,3 +16,18 @@ module.exports= app
 
 
 //TAikfFKDvjwajv478uNnzyZoE6ir9ZpfgE
+
+/*"<b>New Withdrawal Success\n\nAmount</b> : " +
+            value +
+            "\n\n <b>Request:</b> ✅Approved\n<b>Status:</b> ✅Done\n<b> Name:</b>" +
+            user.first_name +
+            "\n<b>Username:</b> @" +
+            user.username +
+            "\n<b>User Id:</b>" +
+            user.telegramid +
+            "\n<b>Total Invited:</b> " +
+            refList.length +
+            "\n\n <b>Payment Method:</b> " +
+            method +
+            "\n\n<b>Bot:</b> @" +
+            bot.name + "\n<b>Invite Your Friends to earn</b>"*/
